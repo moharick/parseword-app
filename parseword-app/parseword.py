@@ -33,3 +33,12 @@ def passGen(size=8, char=string.ascii_uppercase + string.ascii_lowercase + strin
 
 custom_fig = Figlet(font='crawford')
 print(custom_fig.renderText('PARSEWORD'))
+print("*"*70)
+print('Welcome to the Parseword App, where security is the key')
+while True:
+    print("Please select an option")
+    print("1. Sign in ")
+    print("2. Sign up ")
+    print("3. Delete")
+    print("4. Quit")
+    option_selected = int(input())
