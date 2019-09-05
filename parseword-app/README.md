@@ -38,3 +38,12 @@ Behavior Driven Development focuses on enabling user to create an account. Users
 -   Login to your account.
 -   Enter third party apps you want stored in app
 -   View Apps you have added 
+
+## Technologies used
+  > `` Python 3.6 ``
+## License
+  MIT License
+Copyright (c) 2019 Moharick
+
+## Collaborate
+  > Send me an [email](moharick@gmail.com) to collaborate on the project.
