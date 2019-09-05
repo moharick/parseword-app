@@ -18,12 +18,12 @@ Behavior Driven Development focuses on enabling user to create an account. Users
 | sign up| This will allow you to create a new user account|
 | Enter username| This will be prompted once the user selects the login option for verification once there is an existing account|
 | Enter Password| This will be prompted once the user selects the login option for verification once there is an existing account|
-| Create Username| This will be prompted once the user selects the sign up option for verification later|
-| Create  Password| This will be prompted once the user selects the sign up option for verification later|
+| Create Username| This will be prompted once the user selects the sign up option for login|
+| Create  Password| This will be prompted once the user selects the sign up option for login|
 | Generate Password| This will be prompted once the user selects the sign up  for verification|
-| Enter App name| The user is required to input the name of the app they want stored in the password vault|
-| Enter App username| The user is required to input their Username  on the third party app they want stored in the password vault|
-| Enter App Password| The user is required to input their Password on the third party app they want stored in the password vault|
-|Generate App Password | The user has the option  to generate their Password for the third party app they want stored in the password vault|
-| View apps | The user is able to view all the apps they have stored in the Password Vault once they are successfully stored|
+| Enter App name| The user is required to input the name of the app they want stored in the app|
+| Enter App username| The user is required to input their Username  on the third party app they want stored in the app|
+| Enter App Password| The user is required to input their Password on the third party app they want stored in the app|
+|Generate App Password | The user has the option  to generate their Password for the third party app they want stored in the app|
+| View apps | The user is able to view all the apps they have stored in the app once they are successfully stored|
 
