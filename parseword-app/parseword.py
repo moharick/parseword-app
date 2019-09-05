@@ -50,3 +50,8 @@ if option_selected == 1:
     loginUsername = input()
     print("Kindly enter password")
     loginPassword = input()
+for user in userList:
+    if loginUsername == user[0] and loginPassword == user[1]:
+        print("Welcome " + loginUsername)
+        print("Hi, " + loginUsername + " please enter")
+        while True:
