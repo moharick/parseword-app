@@ -55,3 +55,38 @@ for user in userList:
         print("Welcome " + loginUsername)
         print("Hi, " + loginUsername + " please enter")
         while True:
+                    print("*"*70)
+                    print(loginUsername + " ,select an option")
+                    print("1. View sites")
+                    print("2. Add site")
+                    print("3. Delete site")
+                    print("4. Back")
+                    option = int(input())
+                    if option == 1:
+                        print("Here are the sites added")
+                        print(Credential.apps)
+                    elif option == 2:
+                        print("Enter site name:")
+                        name = input()
+                        print("Enter your username in the site above")
+                        username = input()
+                        print(
+                            "Would you like to create or generate a password for " + name + "?")
+                        print("1. Create password")
+                        print("2. Generate password ")
+                        app_option_selected = int(input())
+                        if app_option_selected == 1:
+                            print("Enter password below")
+                            password = input()
+                            Credential.apps.append(
+                                [name, username, password])
+                        elif app_option_selected == 2:
+                            generator = passGen()
+                            Credential.apps.append(
+                                [name, username, generator])
+                        print("Site succesfully added")
+                    elif option == 3:
+                        del_site = input('Enter the site to delete')
+                        Credentials.del_app()
+                    elif option == 4:
+                        break
