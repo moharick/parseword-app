@@ -27,3 +27,14 @@ Behavior Driven Development focuses on enabling user to create an account. Users
 |Generate App Password | The user has the option  to generate their Password for the third party app they want stored in the app|
 | View apps | The user is able to view all the apps they have stored in the app once they are successfully stored|
 
+## Setup/Installation Requirements
+
+-   Open your terminal (ctrl+alt+T).
+-   Initialize git on your terminal.
+-   git clone <https://github.com/moharick/parseword-app/>.
+-   open the 'parseword-app' folder.
+-   Run python3.6 parseword.py
+-   Create an account.
+-   Login to your account.
+-   Enter third party apps you want stored in app
+-   View Apps you have added 
