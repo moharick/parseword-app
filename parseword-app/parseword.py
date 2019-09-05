@@ -29,3 +29,7 @@ def passGen(size=8, char=string.ascii_uppercase + string.ascii_lowercase + strin
     '''
 
     return gen
+
+
+custom_fig = Figlet(font='crawford')
+print(custom_fig.renderText('PARSEWORD'))
