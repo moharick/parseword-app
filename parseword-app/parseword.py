@@ -4,17 +4,14 @@ import string
 import emoji
 from user import User
 from credentials import Credential
+
 userList = []
 
 
 def __init__(self, name, username, password):
-    """
-    Class that generates new users.
-    """
     self.username = username
     self.name = name
     self.password = password
-
 
 def del_app(credentials):
     '''
@@ -22,12 +19,8 @@ def del_app(credentials):
     '''
     credentials.del_app()
 
-
 def passGen(size=8, char=string.ascii_uppercase + string.ascii_lowercase + string.digits):
     gen = ''.join(random.choice(char) for _ in range(size))
-    '''function that generates random password
-    '''
-
     return gen
 
 
@@ -42,19 +35,20 @@ while True:
     print("3. Delete")
     print("4. Quit")
     option_selected = int(input())
-if option_selected == 1:
-    print("*"*70)
-    print("Welcome" + " " + (emoji.emojize(":grinning_face_with_big_eyes:")
-                             ) + " " + (emoji.emojize(":grinning_face_with_big_eyes:")))
-    print("Please enter username:")
-    loginUsername = input()
-    print("Kindly enter password")
-    loginPassword = input()
-for user in userList:
-    if loginUsername == user[0] and loginPassword == user[1]:
-        print("Welcome " + loginUsername)
-        print("Hi, " + loginUsername + " please enter")
-        while True:
+    if option_selected == 1:
+        print("*"*70)
+        print("Welcome" + " " + (emoji.emojize(":grinning_face_with_big_eyes:")
+                                 ) + " " + (emoji.emojize(":grinning_face_with_big_eyes:")))
+        print("Please enter username:")
+        loginUsername = input()
+        print("Kindly enter password")
+        loginPassword = input()
+
+        for user in userList:
+            if loginUsername == user[0] and loginPassword == user[1]:
+                print("Welcome " + loginUsername)
+                print("Hi, " + loginUsername + " please enter")
+                while True:
                     print("*"*70)
                     print(loginUsername + " ,select an option")
                     print("1. View sites")
@@ -87,10 +81,11 @@ for user in userList:
                         print("Site succesfully added")
                     elif option == 3:
                         del_site = input('Enter the site to delete')
-                        Credential.del_app()
+                        credentials.del_app()
                     elif option == 4:
                         break
- else:
+
+            else:
                 print("This user does not exist, kindly register")
 
     elif option_selected == 2:
