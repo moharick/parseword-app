@@ -42,3 +42,11 @@ while True:
     print("3. Delete")
     print("4. Quit")
     option_selected = int(input())
+if option_selected == 1:
+    print("*"*70)
+    print("Welcome" + " " + (emoji.emojize(":grinning_face_with_big_eyes:")
+                             ) + " " + (emoji.emojize(":grinning_face_with_big_eyes:")))
+    print("Please enter username:")
+    loginUsername = input()
+    print("Kindly enter password")
+    loginPassword = input()
